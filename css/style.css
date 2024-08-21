@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    background-color: plum;
+    border-radius: 5px;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+#home .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:black;
+}
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:black;
+    
+}
+
+#home .text{
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    h3{
+        color:white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+
+    }
+    h1{
+        color:purple;
+        font-style: oblique;
+        font-size: xx-large;
+    }
+    h2{
+        color:white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:x-large;
+
+    }
+    p{
+        color:white;
+        font-family:'Times New Roman', Times, serif;
+        font-size:larger;
+    }
+}
+#about .text {
+    flex: 1;
+    padding-right: 5px;
+    text-align: left;
+    h1{
+        color:purple;
+        padding-left: 100px;
+        font-size: xx-large;
+        padding-bottom: 5px;
+
+    }
+    h3{
+        color:aliceblue;
+        font-size: x-large;
+        padding-left:100px;
+        font-style:italic;
+        padding-bottom: 30px;
+    }
+    p{
+        color:aliceblue;
+        padding-left: 100px;
+        font-style:inherit;
+        padding-bottom: 50px;
+        font-size: larger;
+
+
+    }
+
+}
+
+#home .photo,
+#about .photo-rectangular {
+    flex: 1;
+    text-align: right;
+}
+
+#home .photo img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#about .photo-rectangular img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Add this CSS rule to change the color of the "My Skills" text */
+#skills h1 {
+    color: purple; 
+    font-style:initial;
+    font-size:xx-large;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skill-box {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 25%;
+    text-align: center;
+}
+
+.skill-box h2 {
+    margin-top: 0;
+    color: purple;
+    font-style:initial;
+    font-size: xx-large;
+
+}
+.skill-box p{
+    color:black;
+    font-size: larger;
+}
+#projects h1{
+    color:purple;
+    font-size: xx-large;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    text-align: center;
+}
+.project-box h2{
+    color:purple;
+    font-style:inherit;
+    font-size: x-large;
+}
+.project-box p{
+    color: black;
+    font-size: larger;
+    font-style: italic;
+}
+
+.project-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Style for GitHub links */
+.project-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: purple; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-box a:hover {
+    color: #0056b3; /* Hover color */
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color:purple;
+}
+#contact h1{
+    color:purple;
+}
+/* Contact section */
+#contact {
+    padding: 100px 20px;
+    background-color: #f2e6ff; /* Example background color */
+    text-align: center;
+}
+
+/* Style for the headings */
+#contact h1 {
+    color: purple; /* Replace with your desired color */
+    margin-bottom: 20px;
+}
+
+/* Style for labels (Name and Email) */
+#contact label {
+    color: purple; /* Change this color as per your preference */
+    font-weight: bold;
+    font-size: x-large;
+    display: block;
+    margin: 10px 0;
+
+}
+
+/* Optional: Style for input fields */
+#contact input {
+    color: #333; /* Change the text color in input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#contact input[type="submit"] {
+    background-color:purple; /* Blue color */
+    color: #fff;
+    font-size: 20px; /* Larger font size */
+    padding: 5px 10px; /* Larger button size */
+    border: none;
+    border-radius: 5px; /* More rounded corners */
+    cursor: pointer;
+    width: 150px; /* Set a fixed width for the submit button */
+    margin-top: 40px;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: orangered; /* Darker blue on hover */
+}
+
+
+
+section#home {
+    background-color: black;
+}
+
+section#about {
+    background-color: black;
+}
+
+section#skills {
+    background-color:black;
+}
+
+section#projects {
+    background-color:black;
+}
+
+section#contact {
+    background-color: black;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
